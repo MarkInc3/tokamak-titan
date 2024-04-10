@@ -81,6 +81,16 @@ const config: HardhatUserConfig = {
       chainId: 55004,
       url: 'https://rpc.titan.tokamak.network',
     },
+    titafork: {
+      // chainId: 55007,
+      // url: process.env.CONTRACTS_RPC_URL || '',
+      // accounts: [privateKey || ''],
+      url: "https://rpc.titan.tokamak.network",
+      forking: {
+        url: "https://rpc.titan.tokamak.network",
+        // blockNumber:
+      }
+    },
     holesky: {
       chainId: 17000,
       url: process.env.CONTRACTS_RPC_URL || '',
